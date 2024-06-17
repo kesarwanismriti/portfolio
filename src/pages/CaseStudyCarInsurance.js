@@ -512,7 +512,9 @@ export default class CaseStudyCarInsurance extends Component {
                   <br/>
                 </Paragraph>
               </div>
-              <Button size="small" link="#">
+              <Button size="small" link="/portfolio/#/case-studies/sarawak"
+                onClick={() => window.scrollTo(0, 0)}
+              >
                 Back to Top ↑
               </Button>
             </div>
@@ -524,7 +526,9 @@ export default class CaseStudyCarInsurance extends Component {
                  <br/>
                 </Paragraph>
               </div>
-              <Button size="small" link="/case-studies/tater-ninjas/">
+              <Button size="small" link="/portfolio/#/case-studies/tater-ninjas/"
+               onClick={() => window.scrollTo(0, 0)}
+              >
                 Read Next Case Study →
               </Button>
             </div>

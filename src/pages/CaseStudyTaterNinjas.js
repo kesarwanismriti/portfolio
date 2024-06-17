@@ -555,7 +555,9 @@ export default class CaseStudyTaterNinjas extends Component {
                   <br />
                 </Paragraph>
               </div>
-              <Button size="small" link="#">
+              <Button size="small" link="/portfolio/#/case-studies/tater-ninjas"
+               onClick={() => window.scrollTo(0, 0)}
+              >
                 Back to Top ↑
               </Button>
             </div>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter ,Route, Routes } from "react-router-dom";
 import { history } from "./_helpers/history";
 
 import ProfilePage from "./pages/ProfilePage";
@@ -61,7 +61,7 @@ export default class RoutesClass extends Component {
     const supportsHistory = "pushState" in window.history;
 
     return (
-      <BrowserRouter history={history} forceRefresh={!supportsHistory}>
+      <HashRouter history={history} forceRefresh={!supportsHistory}>
         <Routes>
           {routes.map(({ path, Component }) => {
             return (
@@ -71,7 +71,7 @@ export default class RoutesClass extends Component {
    } )}
           <Route />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }

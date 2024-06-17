@@ -45,13 +45,17 @@ export default class CaseStudiesPage extends Component {
               >
                 <li className={css(caseStudyStyles.summaryListItemListItem)}>
                   01/{" "}
-                  <Link href="/case-studies/sarawak/">
+                  <Link href="/portfolio/#/case-studies/sarawak/"
+                   onClick={() => window.scrollTo(0, 0)}
+                  >
                   Sarawak energy: Digitising customer operations
                   </Link>
                 </li>
                 <li className={css(caseStudyStyles.summaryListItemListItem)}>
                   02/{" "}
-                  <Link href="/case-studies/tater-ninjas/">
+                  <Link href="/portfolio/#/case-studies/tater-ninjas/"
+                   onClick={() => window.scrollTo(0, 0)}
+                  >
                   Tater Ninjas: Improving operational efficiency 
                   </Link>
                 </li>
@@ -94,7 +98,7 @@ export default class CaseStudiesPage extends Component {
             services={
               "Design strategy, User Research, Web & mobile app design"
             }
-            link="/case-studies/sarawak/"
+            link="/portfolio/#/case-studies/sarawak/"
           />
         </Section>
 
@@ -118,7 +122,7 @@ export default class CaseStudiesPage extends Component {
             services={
               "Design strategy, User Research, Web & mobile app design"
             }
-            link="/case-studies/tater-ninjas/"
+            link="/portfolio/#/case-studies/tater-ninjas/"
           />
         </Section>
 {/* 

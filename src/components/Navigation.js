@@ -32,6 +32,7 @@ export default class Navigation extends Component {
                     isActiveNavigationItem && styles.navListLinkActiveNested,
                   ])}
                   exact="something"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   <span
                     className={css([

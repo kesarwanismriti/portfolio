@@ -131,7 +131,9 @@ export default class ProfilePage extends Component {
               outcome.
             </Subtitle>
           </h2>
-          <Button display="inline-block" size="small" link={"/case-studies/"}>
+          <Button display="inline-block" size="small" link={"/portfolio/#/case-studies/"}
+           onClick={() => window.scrollTo(0, 0)}
+          >
             View Case Studies
           </Button>
         </Section>

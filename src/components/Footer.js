@@ -38,13 +38,19 @@ export default class Footer extends Component {
             </ul>
             <ul className={css([styles.footerList, styles.footerLeadingItem])}>
               <li className={css(styles.footerListItem)}>
-                <Link colour="new" href="/">Profile</Link>
+                <Link colour="new" href="/portfolio"
+                 onClick={() => window.scrollTo(0, 0)}
+                >Profile</Link>
               </li>
               <li className={css(styles.footerListItem)}>
-                <Link colour="new" href="/case-studies/">Case Studies</Link>
+                <Link colour="new" href="/portfolio/#/case-studies/"
+                 onClick={() => window.scrollTo(0, 0)}
+                >Case Studies</Link>
               </li>
               <li className={css(styles.footerListItem)}>
-                <Link colour="new" href="/contact/">Contact</Link>
+                <Link colour="new" href="/portfolio/#/contact/"
+                 onClick={() => window.scrollTo(0, 0)}
+                >Contact</Link>
               </li>
             </ul>
           </div>

@@ -26,7 +26,8 @@ export default class CaseStudyCardWide extends Component {
               styles.cardWideItemWrapperNoFlex,
             ])}
           >
-            <Button link={link}>
+            <Button link={link}
+             onClick={() => window.scrollTo(0, 0)}>
               {!this.props.link ? "Coming Soon" : "Read Case Study"}
             </Button>
           </div>

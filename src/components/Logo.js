@@ -10,7 +10,7 @@ export default class Logo extends Component {
     }
 
     return (
-      <Link href="/">
+      <Link href="/portfolio">
             <h4>SK</h4>
 
       </Link>
