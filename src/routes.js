@@ -15,7 +15,10 @@ import CaseStudyTaterNinjas from "./pages/CaseStudyTaterNinjas";
 
 const routes = [
   { path: "/", name: "Profile", Component: ProfilePage },
-   {
+  
+  { path: "/case-studies/", name: "Case Studies", Component: CaseStudiesPage },
+  { path: "/contact/", name: "Contact", Component: ContactPage },
+  {
     path: "/case-studies/sarawak/",
     name: "Sarawak",
     Component: CaseStudyCarInsurance,
@@ -25,9 +28,6 @@ const routes = [
     name: "Tater Ninjas",
     Component: CaseStudyTaterNinjas,
   },
-  { path: "/case-studies/", name: "Case Studies", Component: CaseStudiesPage },
-  { path: "/contact/", name: "Contact", Component: ContactPage },
- 
   {
     path: "/case-studies/improving-feature-adoption/",
     name: "Improving Feature Adoption",
