@@ -15,7 +15,6 @@ import CaseStudyTaterNinjas from "./pages/CaseStudyTaterNinjas";
 
 const routes = [
   { path: "/", name: "Profile", Component: ProfilePage },
-  
   { path: "/case-studies/", name: "Case Studies", Component: CaseStudiesPage },
   { path: "/contact/", name: "Contact", Component: ContactPage },
   {
