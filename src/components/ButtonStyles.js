@@ -34,5 +34,12 @@ export const styles = StyleSheet.create({
     padding: `${paddingRem(1.5)} ${paddingRem(2.5)}`,
     fontSize: baseTheme.fontSize[600],
     lineHeight: baseTheme.lineHeight[600]
+  },
+  buttonWhite: {
+    background:"white",
+    color:"#9122E7",
+    ":hover": {
+      background: "white",
+    }
   }
 });

@@ -34,6 +34,7 @@ export default class IndustriesDetail extends Component {
           read more on my{" "}
           <Link
             href="https://www.linkedin.com/in/smritikesarwani/"
+            target="_blank"
           >Linkedin Profile</Link>
         </div>
       </div>

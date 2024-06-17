@@ -60,7 +60,8 @@ export default class ProfilePage extends Component {
           <MyCompaniesList />
         </Section> */}
 
-        <Section>
+        <Section
+        >
           <h1>
             <Title sequence={"/"} title={"Key Projects"} />
           </h1>

@@ -35,6 +35,15 @@ export default class ContactPage extends Component {
             </div>
           </h1>
           <div className={css(globalStyles.row)}>
+          <div className={css(globalStyles.columnOneThird)}>
+              <Title500>Resume</Title500>
+              <Link
+                href="https://www.dropbox.com/scl/fo/u2p1n3bx57hpwmlbn4nvo/ACZVsjjDu0vmSYG0EJ1ysgQ?rlkey=ekc3b4ysuxhvfmr5ptamfqg46&dl=0"
+                target="_blank"
+              >
+                Go to Resume
+              </Link>
+            </div>
             <div className={css(globalStyles.columnOneThird)}>
               <Title500>Email</Title500>
               <Link href="mailto:smriti.kesarwani@gmail.com">
@@ -50,13 +59,7 @@ export default class ContactPage extends Component {
                 Go to LinkedIn profile
               </Link>
             </div>
-            <div className={css(globalStyles.columnOneThird)}>
-              {/* <Title500>Twitter</Title500>
-              <Link href="https://twitter.com/lukejamestaylor" target="_blank">
-                Go to Twitter profile
-              </Link> */}
             </div>
-          </div>
         </Section>
 
         {/* <Section background="grey">

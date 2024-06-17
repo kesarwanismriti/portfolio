@@ -118,7 +118,7 @@ export default class CaseStudiesPage extends Component {
             services={
               "Design strategy, User Research, Web & mobile app design"
             }
-            link="/case-studies/age-visibility/"
+            link="/case-studies/tater-ninjas/"
           />
         </Section>
 {/* 

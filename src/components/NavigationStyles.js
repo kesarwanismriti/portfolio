@@ -22,6 +22,10 @@ const navListLinkActiveStyles = {
   },
 };
 
+const   applyBorder = {
+  borderBottom: `3px solid ${baseTheme.colour.brand.primary}`
+}
+
 export const styles = StyleSheet.create({
   nav: {
     margin: `0`,
@@ -37,22 +41,26 @@ export const styles = StyleSheet.create({
     display: "flex",
     margin: 0,
   },
-  navListItem: {},
+  navListItem: {
+    ":hover": {
+      textDecoration: "none"
+    }
+  },
   navListLink: {
     color: baseTheme.colour.grey[200],
     textDecoration: "none",
     padding: `${paddingRem(3)} ${paddingRem(1.5)}`,
     display: "block",
     ":hover": {
-      textDecoration: "underline",
+      textDecoration: "none",
       color: baseTheme.colour.brand.primary,
     },
   },
-  navListLinkActive: {
-    ...navListLinkActiveStyles,
+  applyBorder: {
+    borderBottom: `3px solid ${baseTheme.colour.brand.primary}`
   },
   navListLinkActiveNested: {
-    ...navListLinkActiveStyles,
+    color: baseTheme.colour.brand.primary,
     ":hover": {
       cursor: "pointer",
     },

@@ -8,6 +8,7 @@ export default class Button extends Component {
     this.props.display === "inline-block" &&
       buttonStyles.push(styles.buttonInlineBlock);
     this.props.size === "small" && buttonStyles.push(styles.buttonSmall);
+    this.props.white && buttonStyles.push(styles.buttonWhite)
 
     return (
       <a

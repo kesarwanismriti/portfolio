@@ -14,20 +14,13 @@ export default class Navigation extends Component {
       { path: "/contact/", name: "Contact" },
     ];
 
-    console.log(pathname)
-
     return (
       <nav className={css(styles.nav)}>
         <ul className={css(styles.navList)}>
           {navigationItems.map((navigationItem) => {
             let isActiveNavigationItem = false;
-            if (
-              navigationItem.path !== "/" &&
-              navigationItem.path !== pathname
-            ) {
-              if (pathname.includes(navigationItem.path))
-                isActiveNavigationItem = true;
-            }
+
+            if (pathname === navigationItem.path || (navigationItem.path === '/case-studies/' && pathname.startsWith('/case-studies/'))) isActiveNavigationItem = true;
 
             return (
               <li className={css(styles.navListItem)}>
@@ -38,10 +31,15 @@ export default class Navigation extends Component {
                     styles.navListLink,
                     isActiveNavigationItem && styles.navListLinkActiveNested,
                   ])}
-                  activeclassname={css(styles.navListLinkActive)}
                   exact="something"
                 >
+                  <span
+                    className={css([
+                      isActiveNavigationItem && styles.applyBorder
+                    ])}
+                  >
                   {navigationItem.name}
+                  </span>
                 </NavLink>
               </li>
             );

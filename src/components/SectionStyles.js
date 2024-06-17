@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
     margin: "0 auto",
     padding: paddingRem(4),
     [baseTheme.screenSize.small]: {
-      padding: `${paddingRem(8)} ${paddingRem(9)}`
+      padding: `${paddingRem(4)} ${paddingRem(9)}`
     }
   }
 });

@@ -30,7 +30,7 @@ export default class ServicesDetail extends Component {
             Designing interfaces with the end-user in mind to ensure a seamless
             experience and strategically refining interaction design principles.
             Achieving iterative improvements through the creation of prototypes
-            and stakeholder testing
+            and stakeholder testing.
           </Paragraph>
         </li>
         <li className={css(styles.servicesDetailListItem)}>
@@ -47,7 +47,7 @@ export default class ServicesDetail extends Component {
             Developing and maintaining reusable design components and creating
             clear guidelines and specifications for design components, content
             and UX writing. Setting up a component library in Sketch, Figma, or
-            Adobe XD for designers to access predefined design elements easily .
+            Adobe XD for designers to access predefined design elements easily.
           </Paragraph>
         </li>
         <li className={css(styles.servicesDetailListItem)}>

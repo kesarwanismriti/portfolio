@@ -27,7 +27,7 @@ export default class OutcomeCard extends Component {
         {small && (
           <div style={{ width:'100%' , display:'flex', alignItems:"center", justifyContent:'center'}}>
             <img style={{
-              height: 'auto',
+              height: '300px',
               width:'100%',
               objectFit:'contain'
             }} src={img} alt="" />

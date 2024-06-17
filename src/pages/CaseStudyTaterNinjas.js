@@ -31,8 +31,11 @@ import informationArc from "../images/information-architecture.png";
 import mockups from "../images/mockups.png";
 import tater from "../images/tater.png";
 import taterBrainstorming from "../images/tater-brainstorming.png";
-import taterOne from '../images/tater-one.png';
-import taterTwo from '../images/tater-two.png'
+import taterOne from "../images/tater-one.png";
+import taterTwo from "../images/tater-two.png";
+import taterThree from "../images/tater-three.png";
+import designSystem from "../images/design-system.png";
+import userStory from "../images/user-story.png";
 
 export default class CaseStudyTaterNinjas extends Component {
   componentDidMount() {
@@ -53,9 +56,12 @@ export default class CaseStudyTaterNinjas extends Component {
               "Case study detailing Problem Statement, UX process, Outcomes & Wins",
             ]}
             trailingContent={
-              <Button link="https://www.figma.com/proto/0vRBtrbtIoqCoqGIAhewr5/Smriti-Portfolio?node-id=29-42818&t=6IFxOD0YT5A1xi7S-1"
-              target="_blank"
-              >View Mockups on Figma</Button>
+              <Button
+                link="https://www.dropbox.com/scl/fo/fzig2v6umdzweq7u06kau/ADSTbPrnP4z4j2MBi2bp1qY?rlkey=485lbw0re219gkzl8gg304cqu&dl=0"
+                target="_blank"
+              >
+                View Mockups on Figma
+              </Button>
             }
           />
         </div>
@@ -89,6 +95,9 @@ export default class CaseStudyTaterNinjas extends Component {
                 </li>
                 <li className={css(styles.summaryListItemListItem)}>
                   User Flow
+                </li>
+                <li className={css(styles.summaryListItemListItem)}>
+                  Competitor Analysis
                 </li>
                 <li className={css(styles.summaryListItemListItem)}>
                   Iterative design
@@ -291,8 +300,7 @@ export default class CaseStudyTaterNinjas extends Component {
             <h3>Brainstorming with Stakeholders & BA</h3>
           </Title400>
           <Paragraph>
-            Collaborative whiteboarding session to identify use case, scope for
-            improvements
+            Collaborative session to identify use case, scope for improvements
           </Paragraph>
           <div
             style={{
@@ -380,8 +388,9 @@ export default class CaseStudyTaterNinjas extends Component {
                 remote usability testing hosted on zoom. BAs from clients were
                 quite helpful to set up the sessions. It helped me to uncover
                 some usability issues in time and i was able to address it in
-                the next iterations. This gave confidence to entire project team
-                for the user adoption to the application
+                the next iterations. This gave confidence to the stakeholders
+                and business sponsor for better user adoption of the new
+                application
               </Paragraph>
             </div>
             <div className={css(globalStyles.columnHalf)}>
@@ -407,11 +416,23 @@ export default class CaseStudyTaterNinjas extends Component {
           </h1>
           <h2>
             <Subtitle type="onBrandPrimary">
-              One of the critical success factor was effective involvement of
-              business stakeholders and end users. Project team was well enabled
-              on UX methodology.
+              One of the critical success factor was regaining users’ trust with
+              new application. A better user adoption led to increase in
+              efficiency, reduced workload and effective communication.
             </Subtitle>
           </h2>
+          <Button
+            size="small"
+            link="https://www.dropbox.com/scl/fo/fzig2v6umdzweq7u06kau/ADSTbPrnP4z4j2MBi2bp1qY?rlkey=485lbw0re219gkzl8gg304cqu&dl=0"
+            target="_blank"
+            style={{
+              width: "300px",
+              marginBottom: "50px",
+            }}
+            white={true}
+          >
+            View Mockups in Figma
+          </Button>
 
           <div className={css(globalStyles.paddingBottom5xUntilSmall)}>
             <div className={css(globalStyles.row)}>
@@ -421,22 +442,57 @@ export default class CaseStudyTaterNinjas extends Component {
                     <Title400 spacing="none">Information Architecture</Title400>
                   }
                   img={taterOne}
-                  subtitle={<Title500></Title500>}
                   description={
-                    <Paragraph size="small">
-                    <br/>
-                    <br/>
-                     IA for visit mobile app
-                    </Paragraph>
+                    <Paragraph size="small">IA for visit mobile app</Paragraph>
                   }
+                  small={true}
                 />
               </div>
               <div className={css(globalStyles.columnHalf)}>
                 <OutcomeCard
-                  title={<Title400 spacing="none">Mockups</Title400>}
-                  img={taterTwo}
-                  button={<Button  target="_blank" link="https://www.figma.com/proto/0vRBtrbtIoqCoqGIAhewr5/Smriti-Portfolio?node-id=29-42818&t=6IFxOD0YT5A1xi7S-1">View Mockups</Button>}
+                  title={<Title400 spacing="none">Persona</Title400>}
+                  img={taterThree}
                   small={true}
+                  description={
+                    <Paragraph size="small">
+                      Proto Persona for the Agronomist
+                    </Paragraph>
+                  }
+                />
+              </div>
+            </div>
+            <div
+              className={css(globalStyles.row)}
+              style={{ marginTop: "50px" }}
+            >
+              <div className={css(globalStyles.columnHalf)}>
+                <OutcomeCard
+                  title={
+                    <Title400 spacing="none">
+                      Design System (Style Guide)
+                    </Title400>
+                  }
+                  img={designSystem}
+                  description={
+                    <Paragraph size="small">
+                      I created Design system for the mobile app with Figma UI
+                      Toolkit for consistent UI
+                    </Paragraph>
+                  }
+                  small={true}
+                />
+              </div>
+              <div className={css(globalStyles.columnHalf)}>
+                <OutcomeCard
+                  title={<Title400 spacing="none">User Story Map</Title400>}
+                  img={userStory}
+                  small={true}
+                  description={
+                    <Paragraph size="small">
+                      I created a detailed user story map was created to support
+                      the agile development of the map
+                    </Paragraph>
+                  }
                 />
               </div>
             </div>
@@ -492,7 +548,7 @@ export default class CaseStudyTaterNinjas extends Component {
             <div className={css(globalStyles.columnOneThird)}>
               <Title400>This Case Study</Title400>
               <Title600>
-              Tater Ninjas: Improving operational efficiency 
+                Tater Ninjas: Improving operational efficiency
               </Title600>
               <div className={css(globalStyles.paddingBottom2x)}>
                 <Paragraph size="small">
@@ -505,16 +561,15 @@ export default class CaseStudyTaterNinjas extends Component {
             </div>
             <div className={css(globalStyles.columnOneThird)}>
               <Title400>Next Case Study</Title400>
-              <Title600>
-              Toyota: Legacy systems transformation {" "}
-              </Title600>
+              <Title600>Toyota: Legacy systems transformation </Title600>
               <div className={css(globalStyles.paddingBottom2x)}>
                 <Paragraph size="small">
                   <br />
-                  <br />
                 </Paragraph>
               </div>
-              <Button size="small" link="/case-studies/">
+              <Button size="small" link="https://www.dropbox.com/scl/fi/pb7ckhsoxzvs8iw0gid8x/Toyota-WIPS-case-study-2.pdf?rlkey=ehdl1uldm8f090yhioxvu5nrr&dl=0"
+                target="_blank"
+              >
                 Read Next Case Study →
               </Button>
             </div>

@@ -280,25 +280,16 @@ export default class CaseStudyCarInsurance extends Component {
                 ])}
               >
                 <li className={css(styles.summaryListItemListItem)}>
-                  Stakeholder interviews
+                Creating a scalable portal 
                 </li>
                 <li className={css(styles.summaryListItemListItem)}>
-                  Formative User Research
+                Replacing the manual and paper based application 
                 </li>
                 <li className={css(styles.summaryListItemListItem)}>
-                  Persona creation
+                Make the status visible for all.
                 </li>
                 <li className={css(styles.summaryListItemListItem)}>
-                  User Flow
-                </li>
-                <li className={css(styles.summaryListItemListItem)}>
-                  Iterative design
-                </li>
-                <li className={css(styles.summaryListItemListItem)}>
-                  Lo & Hi fidelity mockups
-                </li>
-                <li className={css(styles.summaryListItemListItem)}>
-                  Remote usability testing
+                Better communication between different user roles
                 </li>
               </ul>
             </div>
@@ -515,7 +506,7 @@ export default class CaseStudyCarInsurance extends Component {
           <div className={css(globalStyles.row)}>
             <div className={css(globalStyles.columnOneThird)}>
               <Title400>This Case Study</Title400>
-              <Title600>Sarawak energy: Digitising customer operations</Title600>
+              <Title600>Sarawak energy: Digitising customer ops</Title600>
               <div className={css(globalStyles.paddingBottom2x)}>
                 <Paragraph size="small">
                   <br/>
@@ -530,7 +521,6 @@ export default class CaseStudyCarInsurance extends Component {
               <Title600>Tater Ninjas: Improving operational efficiency </Title600>
               <div className={css(globalStyles.paddingBottom2x)}>
                 <Paragraph size="small">
-                 <br/>
                  <br/>
                 </Paragraph>
               </div>

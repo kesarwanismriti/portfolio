@@ -67,7 +67,7 @@ export const globalStyles = StyleSheet.create({
     width: "100%",
   },
   imageHalfWidth:{
-    width: '50%',
+    width: '30%',
   },
   imageHeight: {
     height: 500,
